@@ -12,7 +12,19 @@
     <main id="top">
         <header>
             <p>DESCUBRI LA NUEVA TEMPORADA DE MILLSTREAM</p>
-            <div><a href="#"><img src="./fixed.jpg" alt=""></a></div>
+            <ul>
+              <li>
+                <div class="carro">
+                  <span>Contador</span>
+                  <a href="#ListaCarrito"><img src="./carrito.png" alt=""></a>
+                </div>
+                
+              </li>
+              <li>
+                <div class="casita"><a href="#"><img src="./logocasa.png" alt=""></a></div>
+             </li>
+          </ul>
+
         </header>
              <section>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,7 +45,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Mayorista</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Redes Sociales</a>
+                        <a class="nav-link" href="#redes">Redes Sociales</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,24 +82,28 @@
                         <h4>Conjunto Girl</h4>
                         <h5>Talle 10 a 18</h5>
                         <h5>$2500</h5>
+                        <button id="button" class="button" onclick=(addProduct(2500))>AGREGAR AL CARRITO</button>
                     </li>
                     <li>
                         <div><img src="./fotos/2niña.jpg" alt=""></div>
                         <h4>Conjunto Black</h4>
                         <h5>Talle 10 a 18</h5>
                         <h5>$2500</h5>
+                        <button id="button" class="button" onclick="">AGREGAR AL CARRITO</button>
                     </li>
                     <li>
                         <div><img src="./fotos/3niña.jpg" alt=""></div>
                         <h4>Conjunto Hippie</h4>
                         <h5>Talle 10 a 18</h5>
                         <h5>$2500</h5>
+                        <button id="button" class="button">AGREGAR AL CARRITO</button>
                     </li>
                     <li>
                         <div><img src="./fotos/4niña.jpg" alt=""></div>
                         <h4>Campera White</h4>
                         <h5>Talle 10 a 18</h5>
                         <h5>$1500</h5>
+                        <button id="button" class="button">AGREGAR AL CARRITO</button>
                     </li>
                 </div>
              </section>
@@ -98,38 +114,42 @@
                   <h4>Conjunto Skate</h4>
                   <h5>Talle 10 a 18</h5>
                   <h5>$2500</h5>
+                  <button id="button" class="button">AGREGAR AL CARRITO</button>
               </li>
               <li>
                   <div><img src="./fotos/2niño.jpg" alt=""></div>
                   <h4>Campera Retro</h4>
                   <h5>Talle 10 a 18</h5>
                   <h5>$1500</h5>
+                  <button id="button" class="button">AGREGAR AL CARRITO</button>
               </li>
               <li>
                   <div><img src="./fotos/niño.jpg" alt=""></div>
                   <h4>Conjunto Flower</h4>
                   <h5>Talle 10 a 18</h5>
                   <h5>$2500</h5>
+                  <button id="button" class="button">AGREGAR AL CARRITO</button>
               </li>
               <li>
                   <div><img src="./fotos/4niño.jpg" alt=""></div>
                   <h4>buzo Skate</h4>
                   <h5>Talle 10 a 18</h5>
                   <h5>$1500</h5>
+                  <button id="button" class="button">AGREGAR AL CARRITO</button>
               </li>
             </div>
              </section>
 
              <footer>
-            <section class="redes">
+            <section class="redes" id="redes">
              <div><img src="./whatsapp-logo-11.png" alt="whatsapp"></div>
              <div><img src="./facebook.png" alt=""></div>
-             <div><img src="./Instagram-simbolo.png" alt=""></div>
+             <div><img src="./instagram-logo.png" alt=""></div>
             </section>
             <section id="locales">
               <h1>LOCALES</h1>
-              <h2>Flores -Buenos Aires</h2>
-              <h2>San Miguel - Buenos Aires</h2>
+              <h2>FLORES -CABA</h2>
+              <h2>SAN MIGUEL -BUENOS AIRES</h2>
             </section>
             <section>
               <div class="mb-3">
@@ -143,7 +163,12 @@
               </div>
             </section>
         </footer>
+        <div>
+        <h2 id="ListaCarrito">Lista de carrito </h2>
+        <div id="Losproductos"></div>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
 </body>
 </html>
