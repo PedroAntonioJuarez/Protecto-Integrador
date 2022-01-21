@@ -38,6 +38,11 @@ header .carro {
   bottom: 4rem;
 }
 
+header #carro {
+  border-radius: 40%;
+  background-color: yellow;
+}
+
 header img {
   width: 100%;
   height: 100%;
@@ -235,5 +240,53 @@ footer #locales {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.MiCarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MiCarrito .EstiloCarrito {
+  background-color: aquamarine;
+  border: solid black;
+  width: 600px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.MiCarrito li {
+  list-style: none;
+}
+
+.MiCarrito .estiloTotal {
+  border-top: solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=estilos.css.map */
